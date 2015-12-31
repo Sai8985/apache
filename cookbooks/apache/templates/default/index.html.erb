@@ -1,0 +1,6 @@
+<html>
+  <h1> welcome to <%= @site_name %> </h1>
+       <% if @port != 80 -%>
+            <%= node[:ipaddress] %>:<%= @port %>
+             <% end -%>
+</html>
